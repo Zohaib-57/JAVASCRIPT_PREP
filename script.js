@@ -46,3 +46,48 @@
      var num2 = "34";
      var total = num1 + num2;
      console.log(total);//output will not be the addition of the nnumber instead it will stick with the number likewise the output will be 3434
+
+                                //PROMPTS//
+    /* prompts are used to get the input from the user just like the alert box... both has same syntax  but  prompt has the ability to take input from the user */
+      // prompt will be assign to a variable.
+       var userName = prompt("Enter your name");
+       alert(userName);
+
+       // prompt always return the value in string ..... to identify the return value as number we use the following syntax:
+        var num1 = +prompt("Enter the number");
+        alert(num1);
+
+                                            //STATEMENTS??
+     //use of the statments in some conditions............
+                                    //IF statments//
+/* thwe conditon will result only in two form "True" or "False"
+  /*syntax:  ->  if ( condition){
+                                          }*/
+                                          // lets see the example
+    var num1= 34;
+    // we can use different oiperator -> will study ahead
+    // you can also take the input from the user using the prompt element
+    if ( num1 >= 30){
+        alert("the num1 is greater than 30 ")
+    }
+    //you also want the other conditon tooo then write the extra statment
+    if ( num1 < 30){
+        alert(" the num1 is less than 30.")
+    }
+
+                //EXAMPLE PROGRAM//
+    var cardBalance= +prompt("Enter your card balance");
+    if( cardBalance >= 55){
+        alert("You can travel in BRT Peshawar")
+    }
+    if(cardBalance < 55){
+        alert("Please! Recharge your card")
+    }
+                    //EXAMPLE PROGRAM//
+        var userAge= +prompt("Enter your age");
+        if (userAge >=18){
+            alert("You are eligible for Driving Lisence")
+        }
+        if (userAge < 18){
+            alert("Not Eligible !!!")
+        }
