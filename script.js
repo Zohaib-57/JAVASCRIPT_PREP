@@ -65,12 +65,12 @@
                                           }*/
     //                                       // lets see the example
     var num1= 34;
-    we can use different oiperator -> will study ahead
-    you can also take the input from the user using the prompt element
+    // we can use different oiperator -> will study ahead
+    // you can also take the input from the user using the prompt element
     if ( num1 >= 30){
         alert("the num1 is greater than 30 ")
     }
-    you also want the other conditon tooo then write the extra statment
+    // you also want the other conditon tooo then write the extra statement
     if ( num1 < 30){
         alert(" the num1 is less than 30.")
     }
@@ -123,3 +123,130 @@ console.log(myName2.split("i"));//split the character in the parts and define it
  console.log(Number(myStringNumber)); //convert the string number into actual number datatype
  // few more method are there ....
 //  Refer the https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+                                    // ARRAY //
+                                
+    // defination :- a variable that can have multiple values assigend to it...
+               let theArray =["ali",78,true,67.76868,'khan'];
+    console.log(theArray);
+ //Accessing the element using the index number 
+  console.log(theArray[0]);
+  console.log(theArray[1]);
+  console.log(theArray[2]);
+  console.log(theArray[3]);
+  console.log(theArray[4]);
+
+  //length porperty
+  console.log(theArray.length);
+  // accessing the last element
+  console.log(theArray.length-1);
+
+
+                                        // "ARRAY METH0DS" //
+let newArray = [ 'ali', 'khan', 76 ,104.89, false];
+ 
+console.log(newArray.push("school")); //add the new element to the last of tha array.
+console.log(newArray.pop()); //remove the last element of the array 
+console.log(newArray.unshift("zohaib")); //add the new element to the start of the array 
+console.log(newArray.shift()); //remove the strat element of the array 
+delete(newArray[1]); // delete the mentioned array element
+console.log(newArray.slice(0,0,"junaid")); // delete and replace or replace without deletion of the element
+console.log(newArray.slice(2,4)); // break the array into two parts ....takes the starting index and the stopping index
+console.log(newArray.reverse()); //as name descibe it reverse the element of the array  
+console.log(newArray.join()); // it join all the element of the array into one vlaue 
+console.log(newArray.split(",")); // split the array element by the mentioned character
+
+// these new arrays are joined by the concat method...
+ let array1 = ["ali","khan"];
+ let array2 = ["ahmed","zubair"];
+ let newArray3 = array1.concat(array2);
+console.log(newArray3);
+
+
+                                            // LOOPS //
+        /* FOR loops */ 
+        /* syntax
+        for(initialization,condition,incrementation/decementation); */
+        var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+        for (var i = 0; i <= 4; i++) { // the loop will run four(4) times
+             if (cityToCheck === cleanestCities[i]) {
+             alert("It's one of the cleanest cities");
+             }
+            } 
+
+            //FLAG
+            //  a varible that starts with the default value and change its value udner certian condition
+            var matchFound = "no";
+ for (var i = 0; i <= 4; i++);
+ if (cityToCheck === cleanestCities[i]) {
+ matchFound = "yes";
+alert("It's one of the cleanest cities");
+ } 
+ if (matchFound === "no") {
+ alert("It's not on the list");
+ }
+            //BOOLEAN
+            //has two value TRUE/FALSE the loop will run even the we get the desired result...thats why we use the bresk keyword to stop the loop.
+            
+            var matchFound = false;
+             for (var i = 0; i <= 4; i++);
+             if (cityToCheck === cleanestCities[i]) {
+             matchFound = true;
+             alert("It's one of the cleanest cities");
+            }
+             if (matchFound === false) {
+             alert("It's not on the list");
+             }
+            
+            //ARRAY.length
+            // we use the it to limit the loop to run accodding to the number of the element in the array or variable assiged
+            var numElements = cleanestCities.length;
+            var numElements = cleanestCities.length;
+             var matchFound = false;
+             for (var i = 0; i < numElements; i++);
+             if (cityToCheck === cleanestCities[i]) {
+             matchFound = true;
+             alert("It's one of the cleanest cities");
+             }
+             if (matchFound === false) {
+             alert("It's not on the list");
+             }
+
+                                //Nested for loop //
+                                // a loop inside another loop
+             var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "]                
+             var  lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+             var fullNames = [];
+            for (var i = 0; i < firstNames.length; i++) { // outer loop
+             for (var j = 0; j < lastNames.length; j++) { //inner loop
+             fullNames.push(firstNames[i] + lastNames[j]);                    
+            } 
+        }
+        
+    //Example
+    for(var i=0;i<3;i++){
+        for(var j=0; j<3;j++){
+            console.log(i);
+            console.log(j);
+            if(j==1){
+                break;
+            }
+        }
+    }
+
+                        //MATHS  METHODS //
+    let number = 67.78;
+    Math.round(number); // round off the number to neaest integer...
+
+    Math.ceil(number);
+    Math.floor(number); // roubd off the number to nearest integer...
+
+    let newNum= PI;
+    Math.trunc(PI); // it remoove all the decimal number from the value..
+
+    Math.min(56,78,89); //it will return the minimun number out of it ...
+    Math.max(90,8,0); // it will return the maximum number out of it ...
+
+    let myNumber ;
+    Math.random(myNumber);
+    
