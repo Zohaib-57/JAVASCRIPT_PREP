@@ -287,7 +287,52 @@
     // console.log(theDate.getTime());
 
   // finding the date gap... //
-    let myTodayNewDate = new Date();
-    let myFutureDate = new Date("2050,5,12")
-     let myDateGap = myFutureDate-myTodayNewDate ;
-     console.log(Math.floor(myDateGap));
+    // let myTodayNewDate = new Date();
+    // let myFutureDate = new Date("2050,5,12")
+    //  let myDateGap = myFutureDate-myTodayNewDate ;
+    //  console.log(Math.floor(myDateGap));
+
+     // changing the elements of the date and time ..
+      // let myDate = new Date();
+      //  myDate.setFullYear(2022);
+      //  myDate.setMinutes(54); // these set methods are use to change the elements...
+      //  myDate.setMonth(0);
+      //  console.log(myDate);
+
+                          // FUNCTIONS //
+     // a function is a block of code which is use to perform the specific task...
+      // it consists of the keyword "function" functon-name(parameters){
+      //  statements  }
+      //  function call;
+
+      // function findSum(num1, num2){ // function definition with parameters
+      //         console.log(num1+num2); // statement
+      //            }
+      //       findSum(3,4); // function call
+
+      //       //Example:
+      //            function timeNow(){
+      //             let date= new Date();
+      //             let hrs = date.getHours();
+      //             let mint = date.getMinutes();
+      //           console.log("time : " + hrs + ":" + mint);
+      //            }
+      //             timeNow();
+      //             timeNow(); // calling the function many time which reduce the repetative coding 
+      //             timeNow()
+
+
+                  // Example
+            function lisenceCheck(){
+              let age = prompt("Enter your age!")
+            if (age>=18){
+              alert("you are eligible for driving lisence ");
+            }
+            else if (age<18){
+              alert("you are not eligible for driving lisence");
+            }
+            else {
+              alert("invalid input");
+            }
+            }
+            lisenceCheck();
