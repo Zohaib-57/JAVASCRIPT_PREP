@@ -323,16 +323,62 @@
 
 
                   // Example
-            function lisenceCheck(){
-              let age = prompt("Enter your age!")
-            if (age>=18){
-              alert("you are eligible for driving lisence ");
-            }
-            else if (age<18){
-              alert("you are not eligible for driving lisence");
-            }
-            else {
-              alert("invalid input");
-            }
-            }
-            lisenceCheck();
+            // function lisenceCheck(){
+            //   let age = prompt("Enter your age!")
+            // if (age>=18){
+            //   alert("you are eligible for driving lisence ");
+            // }
+            // else if (age<18){
+            //   alert("you are not eligible for driving lisence");
+            // }
+            // else {
+            //   alert("invalid input");
+            // }
+            // }
+            // lisenceCheck();
+
+            // Example..... /* passing the parameters.
+// function myAddition(num1,num2){
+//   let sum = num1 + num2;
+//   console.log("The addition of num1 and num2 = " + sum );
+// }
+//passing the arguments
+// myAddition(56,78);
+  
+// PAssing the data back from the function 
+//  function calcTotal(merchTotal){
+//   let orderTotal;
+//   if (merchTotal>= 100){
+//     orderTotal=merchTotal;
+//   }
+//   else if (orderTotal<50){
+//     orderTotal=merchTotal + 5;
+//   }
+//   else{
+//     orderTotal=merchTotal + 5 + (0.3 + (merchTotal-50));
+//   }
+//   console.log(orderTotal);
+//  }
+
+//  calcTotal(34);
+//  calcTotal(50);
+    /* declaring the function in different names */
+    //  let myFunction = function(){}; ...//function assigned to variable...
+    //   function myNewFunction(myFucntion){}; ...//function used as parameter...
+
+            // LOCAL AND GLOBAL VARIABLE
+// let theGlobalVar;
+// function myVariable(){
+//   theGlobalVar= "Zohaib";
+// console.log(`I am global variable ${theGlobalVar} .`);
+// }
+// myVariable();
+// console.log(theGlobalVar); // this is global variable and its quality is,can be accessed from anywhere in the code... defined insdie the body. 
+
+
+// function myVariable2(){
+//   let theLocalVar ="Abbas";
+//   console.log(`i am a local variable ${theLocalVar}.`);
+// }
+// myVariable2();
+//  //console.log(theLocalVar); // this will show the error bcz it is local variable and only be accessed inside the function..
