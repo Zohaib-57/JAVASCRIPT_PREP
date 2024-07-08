@@ -163,7 +163,7 @@
 // console.log(newArray3);
 
 
-//                                             // LOOPS //
+//                                             // LOOP //
 //         /* FOR loops */ 
 //         /* syntax
 //         for(initialization,condition,incrementation/decementation); */
@@ -173,6 +173,56 @@
 //              alert("It's one of the cleanest cities");
 //              }
 //             } 
+// Example:-
+//  let myNum = 10;
+//  for(let i=myNum;i>=1;i--){
+//   console.log(i);
+//  }
+
+//  Example:-
+// for(let i=0; i<=10;i++){
+//   if(i==0){
+//     console.log(i + " is even");
+//   }
+//   else if (i % 2===0){
+//     console.log(i + " is even");
+//   }
+//   else {
+//     console.log(i + " is odd");
+//   }
+// }
+
+// // Example:-
+// let classData=[['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+
+// let average=0;
+// for (let i=0; i<5; i++){
+//   average += classData[i][1];
+//   var avg = (average/ classData.length);
+// }
+// console.log(avg);
+//  switch(avg){
+//   case (avg < 60):
+//     console.log("Grade F");
+//     break;
+//     case (avg < 70):
+//       console.log("Grade D");
+//       break;
+//       case (avg < 80):
+//         console.log("Grade C");
+//         break;
+//         case (avg < 90):
+//           console.log("Grade B");
+//           break;
+//           case (avg <= 100):
+//             console.log("Grade A");
+//             break;
+//             default:
+//               console.log("Unsatisfied");
+//  }
+//  console.log("Average grade: " + (average) / classData.length);
+ 
+
 
 //             //FLAG
 //             //  a varible that starts with the default value and change its value udner certian condition
@@ -382,3 +432,45 @@
 // }
 // myVariable2();
 //  //console.log(theLocalVar); // this will show the error bcz it is local variable and only be accessed inside the function..
+
+
+              // Switch Statements //
+// syntax:-
+// switch(condition){
+//   case "value";
+//   alert("staements");
+//   break;
+// }
+
+// // Example:-
+//  let dayOfWeek =prompt("Enter the day of Week");
+//  switch(dayOfWeek){
+//   case "saturday":
+//     alert("Whoope");
+//      break;
+//     case "sunday":
+//       alert("Whoope");
+// break;
+//       case "friday":
+//         alert("Better a weekend");
+//       break;
+//       default:
+//         alert("Aghhhhhhhh");
+//  }
+
+
+ // While Loop
+  // let i= 0;
+  // while(i<5){
+  //   console.log("Zohiab");
+  //   i++;
+  // }
+
+  // example:-
+  //  let myNum = 10;
+  //  while(myNum >= 1){
+  //   console.log(myNum);
+  //   myNum--;
+  //  }
+
+
