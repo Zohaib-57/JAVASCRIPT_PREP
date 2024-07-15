@@ -474,3 +474,22 @@
   //  }
 
 
+
+                       // Placing the JavaScript in the code
+//  as coonected in the head Section...
+// as connected in the body section...
+// it is good to place the JS file at  the end of the body tag because the web page taking more time to load will load the HMTL and CSS first then it functionality (JS)
+
+                    // Commmenting
+  // All the (//) i have used in this code are called comment.
+  // comment are for human bcz the JS code is difficult to remember .so to revise we write the comment as documentation.
+
+// Multile line Comments
+/*to comment many line like 
+i am commenting these lines*/
+
+// Single Line Comments
+// to comment single line like i am commented
+
+// Comment used in the HTML
+// <!-- i am comment used in HTML structure--!>
