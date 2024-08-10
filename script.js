@@ -493,3 +493,53 @@ i am commenting these lines*/
 
 // Comment used in the HTML
 // <!-- i am comment used in HTML structure--!>
+
+
+
+
+              //  Anonymous Function
+//   let testFunction = function(num1 ,num2){
+//   let sum= num1 + num2;
+// console.log(`The sum of two number is ${sum}`);
+//   }
+//   testFunction(34,45);
+
+
+
+//               // Arrow Function
+//   let myTestFunction= (num1,num2)=>{
+//     let sum= num1 + num2;
+//     console.log(`The sum of two number is ${sum}`);
+//   }
+//   myTestFunction(45,56)
+
+  //example
+//   let  myName= (name)=>{
+// console.log(name.charAt(0).toUpperCase() + name.slice(1,9).toLowerCase() + name.charAt(9).toUpperCase() + name.slice(10,16) + name.charAt(16).toUpperCase() + name.slice(17)); // there must be some other way to make the whole name capital...  this is may be difficult one...
+//   }
+// myName("muhammad zohaib abbas");
+
+
+//OBJECT
+//  let myObj  = {
+// name:"Muhammad",
+// middle: "Zohaib",
+// last:"Abbas"
+//  }
+//  console.log(myObj.last);
+
+//  let mySecondObject = {
+// alive:true,
+// answer: 56,
+// hobbies:["Eat","sleep","play"],
+// beverages :{
+//   morning:"coffee",
+//   afternoon: "soft drink"
+// },
+// action: function(){
+//   return "hello world"
+// }
+//  };
+//   // console.log(mySecondObject.action());
+//   console.log(mySecondObject.beverages.afternoon);
+//   console.log(mySecondObject.hobbies);
