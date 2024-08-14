@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="script.js"> <!--JS file extension -->
+     <link rel="stylesheet" href="script.js"> <!-- External JS file extension -->
+     <style>                                  
+     /* internal CSS file extension */
+        input{
+            width: 120px;
+            padding: 7px;
+            color: white;
+            background-color: black;
+            margin: 50px;
+            border: none;
+            border-radius: 10px;
+        }
+        img{
+            width: 100px;
+            height: auto;
+        }
+     </style>
 </head>
 <body>
-    <script src="script.js"></script>                           <!--JS file extension -->
+    <script src="script.js"></script>                           <!-- External JS file extension -->
     <h2>We are continously pracitising the JAVASCRIPT</h2>
     <h1>CARRY on With THE WORK</h1>
-    <script src="script.js"></script>                               <!--JS file extension -->
+
+                                     <!-- Event:Link
+    event is use to perfom any of the event on the web browser_called as eventHandler.
+    e.g clicking a button ,moving a MouseEvent,moving from one field to another in a form ,selecting different option 
+  
+         inline Event Handling
+         syntax:- -->
+    <!-- <a href="#" onclick="alert('hi')">Click</a>                    eventHandler -->
+     <!-- we can also use the function in the event -->
+      <a href="#" onClick="myFtn()">Click</a>
+
+
+<!--  you can also use the button to eb use for the event handling -->
+<input type="button" value="click" onclick="alert('Hello World')">
+
+<!-- you can also use the image to triggeer the event Handler -->
+ <img src="animal-2.jpg" alt="" onclick="alert('you have seen the image')">`
+      
+      <script>
+      //internal JS file extension
+      
+      function myFtn(){
+      alert('hi')}
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>                               <!--external JS file extension -->
 </body>
 </html>

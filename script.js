@@ -349,7 +349,9 @@
       //  myDate.setMonth(0);
       //  console.log(myDate);
 
+
                           // FUNCTIONS //
+
      // a function is a block of code which is use to perform the specific task...
       // it consists of the keyword "function" functon-name(parameters){
       //  statements  }
@@ -395,7 +397,8 @@
 //passing the arguments
 // myAddition(56,78);
   
-// PAssing the data back from the function 
+// Passing the data back from the function 
+
 //  function calcTotal(merchTotal){
 //   let orderTotal;
 //   if (merchTotal>= 100){
@@ -417,6 +420,7 @@
     //   function myNewFunction(myFucntion){}; ...//function used as parameter...
 
             // LOCAL AND GLOBAL VARIABLE
+
 // let theGlobalVar;
 // function myVariable(){
 //   theGlobalVar= "Zohaib";
@@ -434,8 +438,8 @@
 //  //console.log(theLocalVar); // this will show the error bcz it is local variable and only be accessed inside the function..
 
 
-              // Switch Statements //
-// syntax:-
+                                   // Switch Statements //
+//            syntax:-
 // switch(condition){
 //   case "value";
 //   alert("staements");
@@ -459,7 +463,7 @@
 //  }
 
 
- // While Loop
+                                                            // While Loop
   // let i= 0;
   // while(i<5){
   //   console.log("Zohiab");
@@ -475,12 +479,14 @@
 
 
 
-                       // Placing the JavaScript in the code
-//  as coonected in the head Section...
+                       // Placing the JavaScript link in the code
+
+//  as conected in the head Section...
 // as connected in the body section...
 // it is good to place the JS file at  the end of the body tag because the web page taking more time to load will load the HMTL and CSS first then it functionality (JS)
 
-                    // Commmenting
+                              // Commmenting
+
   // All the (//) i have used in this code are called comment.
   // comment are for human bcz the JS code is difficult to remember .so to revise we write the comment as documentation.
 
@@ -497,7 +503,8 @@ i am commenting these lines*/
 
 
 
-              //  Anonymous Function
+                                    //  Anonymous Function
+
 //   let testFunction = function(num1 ,num2){
 //   let sum= num1 + num2;
 // console.log(`The sum of two number is ${sum}`);
@@ -520,7 +527,7 @@ i am commenting these lines*/
 // myName("muhammad zohaib abbas");
 
 
-//OBJECT
+                                    //OBJECT
 //  let myObj  = {
 // name:"Muhammad",
 // middle: "Zohaib",
