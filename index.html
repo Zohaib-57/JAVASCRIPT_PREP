@@ -7,7 +7,7 @@
      <link rel="stylesheet" href="script.js"> <!-- External JS file extension -->
      <style>                                  
      /* internal CSS file extension */
-        input{
+        .button{
             width: 120px;
             padding: 7px;
             color: white;
@@ -20,6 +20,13 @@
             width: 100px;
             height: auto;
         }
+        table,tr,th,td{
+            margin: 30px;
+        border: 1px solid black;
+        padding: 3px;
+        border-collapse:collapse;
+        border-radius: 2px;
+}
      </style>
 </head>
 <body>
@@ -37,16 +44,69 @@
      <!-- we can also use the function in the event -->
       <a href="#" onClick="myFtn()">Click</a>
 
-
+                                            <!-- Event:button -->
 <!--  you can also use the button to eb use for the event handling -->
-<input type="button" value="click" onclick="alert('Hello World')">
+<input class="button" type="button" value="click" onclick="alert('Hello World')">
 
-<!-- you can also use the image to triggeer the event Handler -->
- <img src="animal-2.jpg" alt="" onclick="alert('you have seen the image')">`
-      
+                                            <!-- Event:Image -->
+<!-- you can also use the image to trigger the event Handler -->
+ image for click
+ <img src="animal-2.jpg" alt="" onclick="alert('you have seen the image')">
+
+       <!-- Event:Mouse -->
+        image for mouseover
+        <img src="animal-2.jpg" alt="" onmouseover=" src ='animal-4.jpg'">
+        image for mouseout
+        <img src="animal-4.jpg" alt="" onmouseout=" src ='animal-2.jpg'">
+        <img src="animal-2.jpg" alt="" onmouseover=" src ='animal-4.jpg'" onmouseout=" src ='animal-2.jpg'">
+         <!-- we can also override the events with each other -->
+<br>
+                        <!-- Event:Field -->
+        Email: <br>
+        <input type="email" size="30"  onfocus="this.style.backgroundColor='red';" onblur="this.style.backgroundColor='yellow'">
+
+         <br><br>
+<!-- Reading the Field Values -->
+
+<form onsubmit="checkAddress('email','password')">
+    Email:
+    <input type="email" id="email">
+    Password:
+    <input type="password" id="password" onblur="this.style.backgroundColor= 'rgb(256,0,0)'">
+     <input type="submit" value="submit">
+</form>
+
+    <!-- Setting the fields Values -->
+        <form>
+            Zip:
+            <input type="text" id="zip" onblur="setCity();">
+            City:
+            <input type="text" id="city">
+       </form>
+        
+<div>
+    <p id="slowLoris">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, laboriosam beatae. Nostrum laborum illum reprehenderit?<a href="javascript:void(0);" onclick="expandLoris();"><em>Click for more</em></a>
+    </p>
+</div>
+ <p id="readMe" onclick="readPara();" style="color: red; cursor:pointer"><em>Readme</em></p>
+<hr>
+ <div class="container">
+    <h1>51-Reading and Setting Paragraph Text</h1>
+    <p id="myParagraph">This is the initial paragraph text. Change it using the input below!</p>
+
+    <div class="controls">
+        <button id="readTextBtn" onclick="readParagraphText()">Read Paragraph Text</button>
+        <input type="text" id="newTextInput" placeholder="Enter new text here">
+        <button id="setTextBtn" onclick="setParagraphText()">Set Paragraph Text</button>
+    </div>
+
+    <p id="output"></p>
+</div>
+
       <script>
       //internal JS file extension
-      
+
       function myFtn(){
       alert('hi')}
 

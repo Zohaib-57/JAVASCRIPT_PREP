@@ -550,3 +550,77 @@ i am commenting these lines*/
 //   // console.log(mySecondObject.action());
 //   console.log(mySecondObject.beverages.afternoon);
 //   console.log(mySecondObject.hobbies);
+
+
+// Reading the Field Values
+
+// function checkAddress(emailId,passId){
+//   let email = document.getElementById(emailId);
+//   let password = document.getElementById(passId);
+//    if (email.value === "" || password.value === ""){
+//     alert("Enter the credentials")
+//    }
+// }
+
+
+// Setting the Field Values
+
+// function setCity(){
+//   let cityName;
+//   let zipEntered = document.getElementById("zip").value;
+//   switch(zipEntered){
+//     case "68101":
+//       cityName = "Chicago";
+//       break;
+//       case "65000":
+//       cityName = "Tokyo";
+//       break;
+//       case "25000":
+//       cityName = "Peshawer";
+//       break;
+//       case "56909":
+//       cityName = "New York";
+//       break;
+//   }
+//   document.getElementById("city").value = cityName;
+// }
+
+
+
+//  reading the Paragraph 
+
+// function expandLoris(){
+//   let expandedLoris = "Slow lorises are a group of several species of trepsirrhine primates whichmake up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety of distinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have several adaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time.Slow lorises have a toxic bite, a rare trait among mammals.";;
+// document.getElementById("slowLoris").innerHTML = expandedLoris;
+// }
+
+
+//  writing the paragraph
+
+// function readPara(){
+//   let thePara = document.getElementById("slowLoris").innerHTML;
+//   document.getElementById("readMe").innerHTML= thePara
+// }
+
+function readParagraphText() {
+  var paragraph = document.getElementById('myParagraph');
+  var output = document.getElementById('output');
+  var paragraphText = paragraph.textContent;
+  output.textContent = 'Current paragraph text: "' + paragraphText + '"';
+}
+
+// Function to set new paragraph text
+function setParagraphText() {
+  var paragraph = document.getElementById('myParagraph');
+  var newTextInput = document.getElementById('newTextInput');
+  var output = document.getElementById('output');
+  var newText = newTextInput.value;
+
+  if (newText.trim() === '') {
+    output.textContent = 'Please enter some text to set!';
+  } else {
+    paragraph.textContent = newText;
+    output.textContent = 'Paragraph text has been updated!';
+    newTextInput.value = '';
+  }
+}
